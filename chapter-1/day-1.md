@@ -18,7 +18,7 @@ A blockchain is a decentralized [^decentralized], highly-available [^available] 
 
 > Explain what a Smart Contract is.
 
-A smart contract is a blockchain-based (programming) class.  It often has a set of functions that are executed by the blockchain and state that is persisted by the blockchain, making them well suited as the back-end for a decentralized application.
+A smart contract is a blockchain-based (programming) class.  It often has a set of functions that are executed by the blockchain and state that is persisted by the blockchain (as is the contract code itself), making them well suited as the back-end for a decentralized application.
 
 ## Question 3
 
