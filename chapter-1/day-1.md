@@ -8,11 +8,11 @@
 
 A blockchain is a decentralized [^decentralized], highly-available [^available] and permission-less [^permissionless] server with an immutable database.
 
-[^decentralized]: Control of traditional web2 systems are typically centralized into one company, but control over a blockchain is decentralized across it's node maintainers.  Theoretically anyone can become a node maintainer, but proof of stake blockchains like Flow can require a staking threshold prohibitive to many.  A blockchain is as decentralized as it's node maintainers.
+[^decentralized]: Control of traditional web2 systems are typically centralized into one company, but control over a blockchain is decentralized across it's node maintainers.  Theoretically anyone can become a node maintainer (although proof of stake blockchains like Flow can require a staking threshold prohibitive to many).  A blockchain is as decentralized as it's node maintainers.
 
 [^available]: In theory blockchains are publicly available at all times.  However, like all systems they are subject to planned and unplanned downtime where the system may be partially or completely unavailable.
 
-[^permissionless]: Permissionless in that anyone can execute a transaction or script or deploy a new contract, secured by cryptography.  However, blockchain resources can require permission to modify (ex: transferring an NFT must be signed by the private key of the holder) and some blockchains like Flow have guardrails limiting who can deploy a contract (as the blockchain is bootstrapped).
+[^permissionless]: Permissionless in that anyone can execute a transaction or script or deploy a new contract.  However, blockchain resources can require permission to modify (ex: transferring an NFT must be signed by the private key of the holder) secured by cryptography, and some blockchains like Flow have guardrails limiting who can deploy a contract (as the blockchain is bootstrapped).
 
 ## Question 2
 
