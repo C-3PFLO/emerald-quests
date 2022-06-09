@@ -18,6 +18,6 @@
 
 It's clear that Dapper and FLOW have prioritized the developer experience, avoiding strategies like sharding that can make development exponentially harder.  The easier the developer experience, the more developers you attract and the better systems and apps you see emerge.  Resource oriented programming is part of that developer experience.
 
-From there, safety and security are a must-have.  It's all fund and games until you get hacked or scammed and lose everything.  If enough users get hacked, they'll either all leave and/or governments will try to regulate away the problems.  Without safety and security, you don't have the foundation to support anything else.
+From there, safety and security are a must-have.  It's all fun and games until you get hacked or scammed and lose everything.  If enough users get hacked, they'll either all leave and/or governments will try to regulate away the problems.  Without safety and security, you don't have the foundation to support anything else.
 
 Clarity and approachability can contribute to safety and security.  If a critical mass of users understand what is happening and what transactions they're signing, that improves safety and security.  They also contribute to the developer experience, since systems that are clear and approachable are also easier to build on.
