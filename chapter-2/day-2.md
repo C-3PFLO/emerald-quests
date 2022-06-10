@@ -26,7 +26,7 @@ All code could be run within `prepare`, but `execute` offers a clean separation 
 
 Contract
 
-```
+```cadence
 pub contract HelloWorld {
 
     pub var greeting: String
@@ -49,7 +49,7 @@ pub contract HelloWorld {
 
 Transaction
 
-```
+```cadence
 import HelloWorld from 0x01
 
 transaction(myNewNumber: Int) {
@@ -64,7 +64,7 @@ transaction(myNewNumber: Int) {
 
 Script
 
-```
+```cadence
 import HelloWorld from 0x01
 
 pub fun main(): Int {
