@@ -8,7 +8,7 @@
 
 Script
 
-```
+```cadence
 pub fun main() {
     let myFavoritePeople: [String] = [
         "R2D2",
@@ -25,7 +25,7 @@ pub fun main() {
 
 Script
 
-```
+```cadence
 pub fun main() {
     let sites: {String: UInt64} = {
         "Facebook": 5,
@@ -45,7 +45,7 @@ pub fun main() {
 
 The unwrap `!` operator removes an optional type if the variable is not `nil`, else it panics.  For example:
 
-```
+```cadence
 pub fun main() {
     // ? operator specifies myInt as optional
     var myInt: Int? = 1
@@ -65,7 +65,7 @@ pub fun main() {
 
 Initial code
 
-```
+```cadence
 pub fun main(): String {
     let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
     return thing[0x03]
