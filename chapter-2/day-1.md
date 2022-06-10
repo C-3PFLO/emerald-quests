@@ -8,7 +8,7 @@
 
 Contract code
 
-```
+```cadence
 pub contract JacobTucker {
 
     pub let is: String
@@ -26,7 +26,7 @@ pub contract JacobTucker {
 
 Script code
 
-```
+```cadence
 import HelloWorld from 0x01
 import JacobTucker from 0x03
 
