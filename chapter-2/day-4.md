@@ -4,7 +4,7 @@
 
 Contract
 
-```
+```cadence
 pub contract Guardians {
 
     // declare Guardian struct
@@ -42,7 +42,7 @@ pub contract Guardians {
 
 Transaction
 
-```
+```cadence
 import Guardians from 0x01
 
 transaction(name: String, superPower: String, villainsCaptured: Int) {
@@ -61,7 +61,7 @@ transaction(name: String, superPower: String, villainsCaptured: Int) {
 
 Script
 
-```
+```cadence
 import Guardians from 0x01
 
 pub fun main(index: Int): Guardians.Guardian {
