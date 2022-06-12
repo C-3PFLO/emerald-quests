@@ -30,7 +30,7 @@ No.  Resources can only be created within a contract, although contracts can exp
 
 > What is the type of the resource below?  `pub resource Jacob {}`
 
-It is a `Jacob` resource.
+It is a `@Jacob` resource.
 
 # Question 6
 
