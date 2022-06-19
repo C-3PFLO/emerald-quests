@@ -10,7 +10,7 @@ Variables
 
 | Declaration              | Read Scope | Write Scope |
 | ------------------------ | ---------- | ----------- |
-| `pub(set) var a`         | 1,2,3,4    | 1,2,3,4     |
+| `pub(set) var a`         | 1,2,3,4    | 1,2,3       |
 | `pub var b`              | 1,2,3,4    | 1           |
 | `access(contract) var c` | 1,2,3      | 1           |
 | `access(self) var d`     | 1          | 1           |
