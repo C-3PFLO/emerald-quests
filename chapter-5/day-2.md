@@ -18,7 +18,7 @@ My *favorite* food depends on the day, but right now I could go for a sausage, e
 
 > Please fix this code (Hint: There are two things wrong):
 
-*NOTE: Fixes 0, 1, 2, 4 and 5 are optional.  The original code is valid without these, but probably not aligned with the development intent of declaring `ITest` and `ITest.IStuff`.*
+*NOTE: The original code is valid without any of these fixes, but probably not aligned with the development intent of declaring `ITest` and `ITest.IStuff`.  Once those interfaces are used, additional fixes like Fix-3 then become required.*
 
 The (fixed) contract interface:
 
