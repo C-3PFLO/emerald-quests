@@ -159,7 +159,21 @@ transaction(recipient: Address, name: String, favouriteFood: String, luckyNumber
 }
 ```
 
-Script to read the NFT (for address `0x03`)
+Script to read a specific NFT by id (run for address `0x03`)
+
+```cadence
+import CryptoPoops from 0x01
+
+pub fun main(address: Address, id: UInt64) {
+    let publicCollection = getAccount(address).getCapability(/public/MyCollection)
+        // borrow as CryptoPoopsCollectionPublic to use borrowAuthNFT
+        .borrow<&CryptoPoops.Collection{CryptoPoops.CryptoPoopsCollectionPublic}>()
+        ?? panic("The address does not have a Collection.")
+    log(publicCollection.borrowAuthNFT(id: id))
+}
+```
+
+Script to all of the NFTs in the collection (for address `0x03`)
 
 ```cadence
 import CryptoPoops from 0x01
