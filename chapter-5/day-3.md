@@ -126,7 +126,9 @@ transaction() {
         signer.save(<- CryptoPoops.createEmptyCollection(), to: /storage/MyCollection)
         // need NonFungibleToken.CollectionPublic for deposit
         // and CryptoPoops.CryptoPoopsCollectionPublic for borrowAuthNFT
-        signer.link<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic, CryptoPoops.CryptoPoopsCollectionPublic}>(/public/MyCollection, target: /storage/MyCollection)
+        signer.link<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic,
+                                            CryptoPoops.CryptoPoopsCollectionPublic}>
+            (/public/MyCollection, target: /storage/MyCollection)
     }
 }
 ```
@@ -141,14 +143,15 @@ transaction(recipient: Address, name: String, favouriteFood: String, luckyNumber
 
     prepare(signer: AuthAccount) {
         let minter = signer.borrow<&CryptoPoops.Minter>(from: /storage/Minter)
-        ?? panic("This signer is not the one who deployed the contract.")
+            ?? panic("This signer is not the one who deployed the contract.")
         let nft <- minter.createNFT(
             name: name,
             favouriteFood: favouriteFood,
             luckyNumber: luckyNumber
         )
 
-        let recipientsCollection = getAccount(recipient).getCapability(/public/MyCollection)
+        let recipientsCollection = getAccount(recipient)
+            .getCapability(/public/MyCollection)
             .borrow<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic}>()
             ?? panic("The recipient does not have a Collection.")
         recipientsCollection.deposit(token: <- nft)
@@ -169,7 +172,7 @@ pub fun main(address: Address) {
     // get list of ids and iterate
     let nftIDs = publicCollection.getIDs()
     for id in nftIDs {
-        // borrow auth so CryptoPoops.NFT properties are accessibl
+        // borrow auth so CryptoPoops.NFT properties are accessible
         log(publicCollection.borrowAuthNFT(id: id))
     }
 }
